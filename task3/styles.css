@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #222;
+    padding: 20px 45px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.title p {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+
+    width: 100%;
+    padding: 18px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.4s;
+}
+
+.gallery-item:hover .caption {
+    bottom: 0;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
