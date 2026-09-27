@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+/* FLEXBOX */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #222;
+    padding: 20px 45px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+.welcome {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px 25px;
+}
+
+.welcome > p:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.welcome h1 {
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+.description {
+    color: #555;
+}
+
+/* GRID */
+.portfolio-grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px 50px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.projects h2,
+.sidebar h2 {
+    margin-top: 0;
+}
+
+/* FLEXBOX INSIDE PROJECT CARDS */
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #cccccc;
+}
+
+.project-card span {
+    font-size: 12px;
+    color: #777;
+}
+
+.project-card h3 {
+    margin: 8px 0;
+}
+
+.project-card p {
+    color: #555;
+    max-width: 500px;
+}
+
+.button {
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.sidebar {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sidebar p {
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills span {
+    background-color: #444;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
